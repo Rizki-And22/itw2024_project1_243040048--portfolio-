@@ -281,7 +281,7 @@ nav ul li a:hover {
 }
 
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1285px) {
   nav ul {
     width: 50%;
   }
@@ -304,6 +304,9 @@ nav ul li a:hover {
   .about-container {
     display: grid !important;
     grid-template-columns: none !important;
+    padding-bottom: 0 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5rem;
   }
   .about-box {
     height: 100%;
@@ -318,6 +321,72 @@ nav ul li a:hover {
   }
 }
 
+@media screen and (max-width: 991px) {
+  header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  .timeline-items::before {
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+  .timeline-dot {
+    left: 0;
+  }
+  .about {
+    padding-bottom: 7rem;
+  }
+  .contact form {
+    flex-direction: column;
+  }
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-content {
+    margin-top: 200px;
+  }
+  .home-sci {
+    position: absolute;
+    bottom: 5px;
+  }
+
+  .about-container .about-box {
+    margin-right: 70px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #081b29;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+  }
+}
+
 /* mobile */
 
 @media screen and (max-width: 576px) {
@@ -327,7 +396,7 @@ nav ul li a:hover {
   nav ul {
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 50px;
     width: 100%;
     height: 100vh;
     justify-content: space-evenly;
@@ -362,7 +431,8 @@ nav ul li a:hover {
     margin-top: 100px;
   }
 
-  .contact .btn {
+  .about-info p {
+    font-size: 10px;
   }
 }
 
@@ -433,6 +503,8 @@ nav ul li a:hover {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
+  width: 90%;
+  margin-left: 70px;
 }
 
 .about-box {
@@ -534,10 +606,10 @@ nav ul li a:hover {
   padding-left: calc(50% + 30px);
 }
 
-timelin-dot {
+.timeline-dot {
   height: 21px;
   width: 21px;
-  background-color: yellow;
+  background-color: #0491c9;
   box-shadow: 0 0 25px #0491c9;
   position: absolute;
   left: calc(50% - 8px);
