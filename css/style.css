@@ -618,7 +618,8 @@ nav ul li a:hover {
   max-height: 200px;
   justify-content: left;
   align-items: baseline;
-  padding: 5rem 5rem;
+
+  padding: 50px;
 }
 
 .about-info h4 {
@@ -919,9 +920,9 @@ input.btn:hover {
   header {
     padding: 2rem 3%;
   }
-  section {
+  /* section {
     padding: 10rem 3% 2rem;
-  }
+  } */
   .timeline-items::before {
     left: 7px;
   }
@@ -968,5 +969,14 @@ input.btn:hover {
   }
   .about-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 425) {
+  .about-info h4 {
+    font-size: 1px;
+  }
+  * {
+    display: flex;
   }
 }
