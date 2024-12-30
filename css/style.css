@@ -951,18 +951,18 @@ input.btn:hover {
   .contact form {
     flex-direction: column;
   }
-  /* .about {
+  .about {
     min-width: 90vh;
   }
   .education {
-    min-width: 90vh;
+    min-width: 80vh;
   }
   .contact {
     min-width: 90vh;
-  } */
+  }
   .footer {
     padding: 2rem 3%;
-    /* min-width: 90vh; */
+    min-width: 90vh;
   }
 }
 
