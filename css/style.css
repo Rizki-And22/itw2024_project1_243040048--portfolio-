@@ -923,13 +923,7 @@ input.btn:hover {
   header {
     padding: 2rem 3%;
   }
-  section {
-    min-width: 100vh;
-  }
 
-  /* section {
-    padding: 10rem 3% 2rem;
-  } */
   .timeline-items::before {
     left: 7px;
   }
@@ -958,6 +952,7 @@ input.btn:hover {
   .contact form {
     flex-direction: column;
   }
+
   .footer {
     min-width: 100vh;
     padding: 2rem 3%;
