@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 html {
   scroll-behavior: smooth;
+  min-width: 90vh;
 }
 
 * {
@@ -951,7 +952,7 @@ input.btn:hover {
   .contact form {
     flex-direction: column;
   }
-  .about {
+  /* .about {
     min-width: 90vh;
   }
   .education {
@@ -959,10 +960,10 @@ input.btn:hover {
   }
   .contact {
     min-width: 90vh;
-  }
+  } */
   .footer {
     padding: 2rem 3%;
-    min-width: 90vh;
+    /* min-width: 90vh; */
   }
 }
 
