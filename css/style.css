@@ -914,12 +914,19 @@ input.btn:hover {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 5rem;
   }
+  section {
+    min-width: 100vh;
+  }
 }
 
 @media (max-width: 991px) {
   header {
     padding: 2rem 3%;
   }
+  section {
+    min-width: 100vh;
+  }
+
   /* section {
     padding: 10rem 3% 2rem;
   } */
@@ -951,9 +958,13 @@ input.btn:hover {
   .contact form {
     flex-direction: column;
   }
-
   .footer {
+    min-width: 100vh;
     padding: 2rem 3%;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 }
 
@@ -970,6 +981,9 @@ input.btn:hover {
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  section {
+    min-width: 100vh;
+  }
 }
 
 @media (max-width: 425) {
@@ -978,5 +992,8 @@ input.btn:hover {
   }
   * {
     display: flex;
+  }
+  section {
+    min-width: 100vh;
   }
 }
