@@ -6,7 +6,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: "Poppins", serif;
 }
 
@@ -914,16 +914,15 @@ input.btn:hover {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 5rem;
   }
-  section {
-    min-width: 100vh;
-  }
 }
 
 @media (max-width: 991px) {
   header {
     padding: 2rem 3%;
   }
-
+  section {
+    padding: 10rem 3% 2rem;
+  }
   .timeline-items::before {
     left: 7px;
   }
@@ -952,14 +951,18 @@ input.btn:hover {
   .contact form {
     flex-direction: column;
   }
-
-  .footer {
-    min-width: 100vh;
-    padding: 2rem 3%;
+  .about {
+    min-width: 90vh;
   }
-
-  * {
-    box-sizing: border-box;
+  .education {
+    min-width: 90vh;
+  }
+  .contact {
+    min-width: 90vh;
+  }
+  .footer {
+    padding: 2rem 3%;
+    min-width: 90vh;
   }
 }
 
@@ -976,9 +979,6 @@ input.btn:hover {
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  section {
-    min-width: 100vh;
-  }
 }
 
 @media (max-width: 425) {
@@ -987,8 +987,5 @@ input.btn:hover {
   }
   * {
     display: flex;
-  }
-  section {
-    min-width: 100vh;
   }
 }
